@@ -92,6 +92,49 @@ footer {
     font-size: 14px;
 }
 
+/* App Brand */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.app-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 9px;
+    flex-shrink: 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-links a {
+    margin-left: 0;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .app-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #111214;
